@@ -1,19 +1,21 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-import {IEdition} from "nft-editions/interfaces/IEdition.sol";
-
 import {IDropEligibilityChecker} from "../interfaces/IDropEligibilityChecker.sol";
+
+interface IERC721 {
+    function balanceOf(address account) external view returns (uint256);
+}
 
 /// Allows anyone who claimed from one of N previous drops
 contract PreviousDropCollector is IDropEligibilityChecker {
-    IEdition[] previousDrops;
+    IERC721[] previousDrops;
 
     constructor(address[] memory _previousDrops) {
         uint256 length = _previousDrops.length;
         require(length > 0, "EMPTY_LIST");
         for (uint256 i = 0; i < length; ) {
-            previousDrops.push(IEdition(_previousDrops[i]));
+            previousDrops.push(IERC721(_previousDrops[i]));
 
             unchecked {
                 i++;
