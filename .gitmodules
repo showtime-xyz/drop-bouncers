@@ -4,3 +4,6 @@
 [submodule "lib/nft-editions"]
 	path = lib/nft-editions
 	url = https://github.com/showtime-xyz/nft-editions
+[submodule "lib/solmate"]
+	path = lib/solmate
+	url = https://github.com/transmissions11/solmate
