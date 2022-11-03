@@ -7,3 +7,4 @@ forge-std/=lib/forge-std/src/
 hardhat-deploy/=lib/nft-editions/node_modules/hardhat-deploy/
 hardhat/=lib/nft-editions/node_modules/hardhat/
 nft-editions/=lib/nft-editions/contracts/
+solmate/=lib/solmate/src/
