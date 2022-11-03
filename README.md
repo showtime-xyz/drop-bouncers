@@ -16,7 +16,7 @@ See this [page](https://showtime-xyz.notion.site/Drops-With-Contract-Conditions-
 
 ## Applications
 
-See [src/examples/StaticAllowList.sol](https://github.com/showtime-xyz/drop-bouncers/blob/main/src/interfaces/IDropEligibilityChecker.sol) for a good starting point. It lets you do a Merkle-style drop (a static list of addresses that are allowed to mint):
+See [src/examples/StaticAllowList.sol](https://github.com/showtime-xyz/drop-bouncers/blob/main/src/examples/StaticAllowList.sol) for a good starting point. It lets you do a Merkle-style drop (a static list of addresses that are allowed to mint):
 
 ```solidity
 import {IDropEligibilityChecker} from "../interfaces/IDropEligibilityChecker.sol";
