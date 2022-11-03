@@ -43,6 +43,6 @@ contract StaticAllowList is IDropEligibilityChecker {
 
 Some differences:
 
-- the list of addresses doesn't have to be static
+- the list of addresses doesn't have to be static (in fact, see [src/examples/DynamicAllowList.sol](https://github.com/showtime-xyz/drop-bouncers/blob/main/src/examples/DynamicAllowList.sol) 😇)
 - the storage cost must be paid by the deployer upfront, but it can be reused across drops
 - unlike a merkle drop, it doesn't require any off-chain computation
